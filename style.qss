@@ -1,0 +1,123 @@
+/* gym_style.qss */
+
+/* General Window/Application Styling */
+QWidget {
+    background-color: #F5F5F5; /* Main background color for the application */
+    color: #333333; /* Default text color for general widgets */
+    font-family: "Segoe UI", "Arial", sans-serif; /* Preferred font */
+    font-size: 14px;
+}
+
+/* Left Navbar - Often a QFrame or QWidget acting as a container */
+#leftNavbar { /* Assuming your navbar QFrame/QWidget has objectName="leftNavbar" */
+    background-color: #004D40; /* Dark Teal - Navbar background */
+    border-right: 1px solid #1A237E; /* Subtle border to separate from main content */
+    padding: 10px;
+}
+
+/* Buttons within the Navbar (e.g., QPushButton for navigation items) */
+#leftNavbar QPushButton {
+    background-color: transparent; /* Transparent background by default */
+    color: #E0E0E0; /* Light Gray text for inactive items */
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    qproperty-iconSize: 20px 20px; /* Adjust icon size if you use icons */
+}
+
+/* Hover state for Navbar Buttons */
+#leftNavbar QPushButton:hover {
+    background-color: #00695C; /* Slightly lighter teal on hover */
+    color: #FFFFFF; /* White text on hover */
+}
+
+/* Active state for Navbar Buttons - You'll need to manage this in your code */
+/* For example, by adding a dynamic property or a specific object name for the active button */
+#leftNavbar QPushButton.active, #leftNavbar QPushButton:checked { 
+    background-color: #26A69A; /* Turquoise - Active background */
+    color: #FFFFFF; /* White text for active item */
+    font-weight: bold;
+    border-left: 4px solid #CDDC39; /* Lime Green accent border */
+}
+
+/* Main Content Area - Often a QFrame or QWidget */
+#mainContentArea { /* Assuming your main content QFrame/QWidget has objectName="mainContentArea" */
+    background-color: #FFFFFF; /* White background for main content */
+    padding: 20px;
+    border-radius: 5px; /* Slightly rounded corners for a modern look */
+}
+
+/* Standard Buttons (e.g., Save, Submit, etc.) */
+QPushButton {
+    background-color: #4169E1; /* Royal Blue */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #365EC7; /* Slightly darker Royal Blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #2A4FA3; /* Even darker Royal Blue when pressed */
+}
+
+/* Input Fields (QLineEdit, QTextEdit) */
+#txtSearch,QLineEdit, QTextEdit {
+    border: 1px solid #BDBDBD; /* Medium Gray border */
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #4169E1; /* Royal Blue border when focused */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Labels */
+QLabel {
+    color: #333333; /* Default text color */
+}
+
+/* Headers (e.g., using QLabel with a specific objectName or a style class) */
+QLabel#headerTitle { /* Assuming a QLabel for titles has objectName="headerTitle" */
+    font-size: 24px;
+    font-weight: bold;
+    color: #1A237E; /* Deep Blue for main titles */
+    margin-bottom: 15px;
+}
+
+/* Progress Bars */
+QProgressBar {
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    text-align: center;
+    color: #333333;
+    background-color: #E0E0E0; /* Light Gray for empty part */
+}
+
+QProgressBar::chunk {
+    background-color: #2ECC71; /* Emerald Green for filled part */
+    border-radius: 5px;
+}
+
+/* Table Views (QTableView) */
+QTableView {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    selection-background-color: #E6EEFA; /* Light Blue for selected row */
+    selection-color: #333333;
+    gridline-color: #E0E0E0;
+}
+
+QHeaderView::section {
+    background-color: #EEEEEE; /* Header background */
+    color: #333333;
+    padding: 5px;
+    border: 1px solid #E0E0E0;
+}

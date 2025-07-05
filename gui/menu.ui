@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>816</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>816</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>816</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,10">
+    <item>
+     <widget class="QWidget" name="leftNavbar" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="btnNavHome">
+         <property name="text">
+          <string>Trang chủ</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../images/icons/house (1).svg</normaloff>../images/icons/house (1).svg</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnNavProduct">
+         <property name="text">
+          <string>Sản phẩm</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../images/icons/layout-grid (1).svg</normaloff>../images/icons/layout-grid (1).svg</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnNavAdd">
+         <property name="text">
+          <string>Thêm</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../images/icons/package-plus (1).svg</normaloff>../images/icons/package-plus (1).svg</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnNavAI">
+         <property name="text">
+          <string>AI</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../images/icons/sparkles (1).svg</normaloff>../images/icons/sparkles (1).svg</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSetting">
+         <property name="text">
+          <string>Cài đặt</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../images/icons/settings (1).svg</normaloff>../images/icons/settings (1).svg</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnLogout">
+         <property name="text">
+          <string>Đăng xuất</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../images/icons/log-out (1).svg</normaloff>../images/icons/log-out (1).svg</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QWidget" name="txtSearch" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">background:transparent;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../images/icons/search.svg</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="styleSheet">
+             <string notr="true">border:none;
+background: transparent;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Tìm kiếm sản phẩm</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QScrollArea" name="scrollArea">
+             <property name="styleSheet">
+              <string notr="true">border:none;
+padding:0px;
+margin:0px;</string>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOn</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>-24</y>
+                <width>1000</width>
+                <height>917</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>1000</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>1000</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <property name="spacing">
+                <number>20</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>978</width>
+                   <height>400</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../images/img/videoframe_1353.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="styleSheet">
+                  <string notr="true">font-size:45px;
+text-transform: uppercase;
+font-weight:bold;
+color:#004d40;</string>
+                 </property>
+                 <property name="text">
+                  <string>Hội viên The New Gym</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="styleSheet">
+                  <string notr="true">color:#004d40;
+font-size:22px;</string>
+                 </property>
+                 <property name="text">
+                  <string>The New Gym cung cấp gói Hội viên gói tập Tất Cả Chi Nhánh và 1 Chi Nhánh. Cả hai đều cho bạn tham gia tập luyện không giới hạn trong không gian Không phán xét, nơi mọi người cảm thấy được chào đón từ khi bước vào.</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>300</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>300</height>
+                  </size>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <item>
+                   <widget class="QWidget" name="widget_3" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(1, 97, 117);
+border-radius:15px;
+color:white</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_5">
+                     <item>
+                      <widget class="QWidget" name="widget_5" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_3">
+                        <item>
+                         <widget class="QLabel" name="label_5">
+                          <property name="styleSheet">
+                           <string notr="true">    background: transparent;
+</string>
+                          </property>
+                          <property name="text">
+                           <string>1 THÁNG</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_6">
+                          <property name="styleSheet">
+                           <string notr="true">background: #004D40;
+padding: 2px 5px;
+border-radius: 5px;
+color:white;</string>
+                          </property>
+                          <property name="text">
+                           <string>TẤT CẢ CHI NHÁNH</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_6" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_4">
+                        <item>
+                         <widget class="QLabel" name="label_7">
+                          <property name="styleSheet">
+                           <string notr="true">color:yellow;
+font-weight:bold;
+font-size:25px;
+</string>
+                          </property>
+                          <property name="text">
+                           <string>399.000đ</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_8">
+                          <property name="text">
+                           <string>/tháng</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_9">
+                       <property name="text">
+                        <string>Tập luyện tại toàn hệ thống The New Gym trên toàn quốc, miễn phí kiểm tra sức khỏe và sai lệch tư thế, và nhiều hơn nữa!</string>
+                       </property>
+                       <property name="wordWrap">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_7" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_5">
+                        <item>
+                         <widget class="QLabel" name="label_10">
+                          <property name="styleSheet">
+                           <string notr="true">text-decoration: underline;</string>
+                          </property>
+                          <property name="text">
+                           <string>Xem chi tiết</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_11">
+                          <property name="styleSheet">
+                           <string notr="true">color: #000;
+background:#fff;
+height: 25px;
+border-radius: 10px;</string>
+                          </property>
+                          <property name="text">
+                           <string>Tham gia</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_4">
+                    <property name="styleSheet">
+                     <string notr="true">QFrame {
+border:1px solid rgb(1, 97, 117);
+border-radius:15px;
+background: white;
+}</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                     <item>
+                      <widget class="QWidget" name="widget_8" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_6">
+                        <item>
+                         <widget class="QLabel" name="label_12">
+                          <property name="styleSheet">
+                           <string notr="true">    background: transparent;
+</string>
+                          </property>
+                          <property name="text">
+                           <string>1 THÁNG</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_13">
+                          <property name="styleSheet">
+                           <string notr="true">background: #004D40;
+padding: 2px 5px;
+border-radius: 5px;
+color:white;</string>
+                          </property>
+                          <property name="text">
+                           <string>TẤT CẢ CHI NHÁNH</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_9" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_7">
+                        <item>
+                         <widget class="QLabel" name="label_14">
+                          <property name="styleSheet">
+                           <string notr="true">color:yellow;
+font-weight:bold;
+font-size:25px;
+</string>
+                          </property>
+                          <property name="text">
+                           <string>399.000đ</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_15">
+                          <property name="text">
+                           <string>/tháng</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_16">
+                       <property name="text">
+                        <string>Tập luyện tại toàn hệ thống The New Gym trên toàn quốc, miễn phí kiểm tra sức khỏe và sai lệch tư thế, và nhiều hơn nữa!</string>
+                       </property>
+                       <property name="wordWrap">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_10" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_8">
+                        <item>
+                         <widget class="QLabel" name="label_17">
+                          <property name="styleSheet">
+                           <string notr="true">text-decoration: underline;</string>
+                          </property>
+                          <property name="text">
+                           <string>Xem chi tiết</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_18">
+                          <property name="styleSheet">
+                           <string notr="true">color: #000;
+background:#fff;
+height: 25px;
+border-radius: 10px;</string>
+                          </property>
+                          <property name="text">
+                           <string>Tham gia</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

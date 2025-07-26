@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="lbTitle">
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Thêm/sửa sản phẩm</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,7">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Nhập tên sản phẩm</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtName">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid rgb(255, 170, 0);
+border-radius: 20px;
+height: 40px;
+padding-left: 20px;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Nhập tên phim</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="3,7">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Nhập mô tả</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="txtDesc">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid rgb(255, 170, 0);
+
+height: 40px;</string>
+       </property>
+       <property name="plainText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="3,7">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Loại sản phẩm</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbType">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid rgb(255, 170, 0);
+border-radius: 20px;
+height: 40px;
+padding-left: 20px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Whey</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mass</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PreWorkout</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Shaker</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BCAAs</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yến mạch</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="3,7">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Giá tiền</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtPrice">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid rgb(255, 170, 0);
+border-radius: 20px;
+height: 40px;
+padding-left: 20px;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Nhập giá tiền...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="3,7">
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Số lượng</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtQuantity">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid rgb(255, 170, 0);
+border-radius: 20px;
+height: 40px;
+padding-left: 20px;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Nhập số lượng sản phẩm trong kho còn...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="3,7">
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Giảm giá</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtDiscount">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid rgb(255, 170, 0);
+border-radius: 20px;
+height: 40px;
+padding-left: 20px;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Nhập số % giảm giá...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="3,7">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Thương hiệu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtBrand">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid rgb(255, 170, 0);
+border-radius: 20px;
+height: 40px;
+padding-left: 20px;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Nhập thương hiệu...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="3,0,0">
+     <item>
+      <widget class="QLabel" name="lbImage">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Hình ảnh sẽ hiển thị ở đây</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnImage">
+       <property name="styleSheet">
+        <string notr="true">border-radius: 12px;
+height: 40px;
+width:200px;
+background:  rgb(85, 0, 0);
+color: #fff;</string>
+       </property>
+       <property name="text">
+        <string>Nhấn vào để thêm hình</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="styleSheet">
+        <string notr="true">QDialogButtonBox * {
+	border-radius: 12px;
+height: 40px;
+width:100px;
+background:  rgb(0, 85, 127);
+color: #fff;
+
+}
+QDialogButtonBox *[text=&quot;Cancel&quot;] {
+    background: #D5451B;
+}
+QDialogButtonBox *[text=&quot;OK&quot;] {
+    background: #0E2148;
+}</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

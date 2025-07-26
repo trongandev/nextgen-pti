@@ -149,47 +149,14 @@
      </widget>
     </item>
     <item>
-     <widget class="QWidget" name="widget_2" native="true">
+     <widget class="QWidget" name="right_content" native="true">
       <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
-        <widget class="QWidget" name="txtSearch" native="true">
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <property name="spacing">
-           <number>10</number>
-          </property>
-          <item>
-           <widget class="QLabel" name="label">
-            <property name="styleSheet">
-             <string notr="true">background:transparent;</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="pixmap">
-             <pixmap>../images/icons/search.svg</pixmap>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="lineEdit">
-            <property name="styleSheet">
-             <string notr="true">border:none;
-background: transparent;</string>
-            </property>
-            <property name="placeholderText">
-             <string>Tìm kiếm sản phẩm</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
        <item>
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
-         <widget class="QWidget" name="page">
+         <widget class="QWidget" name="page_home">
           <layout class="QVBoxLayout" name="verticalLayout_4">
            <property name="spacing">
             <number>10</number>
@@ -226,7 +193,7 @@ margin:0px;</string>
               <property name="geometry">
                <rect>
                 <x>0</x>
-                <y>-24</y>
+                <y>0</y>
                 <width>1000</width>
                 <height>917</height>
                </rect>
@@ -537,7 +504,670 @@ border-radius: 10px;</string>
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="page_2"/>
+         <widget class="QWidget" name="page_product">
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QWidget" name="txtSearch" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>10</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="styleSheet">
+                 <string notr="true">background:transparent;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>../images/icons/search.svg</pixmap>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit">
+                <property name="styleSheet">
+                 <string notr="true">border:none;
+background: transparent;</string>
+                </property>
+                <property name="placeholderText">
+                 <string>Tìm kiếm sản phẩm</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="scrollArea_8">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_8">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1010</width>
+                <height>695</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_26">
+               <item>
+                <widget class="QScrollArea" name="scrollArea_7">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_wheyProtein">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>986</width>
+                    <height>331</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <item>
+                    <widget class="QFrame" name="frame_15">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>120</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>120</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_24">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QFrame" name="frame_16">
+                        <property name="maximumSize">
+                         <size>
+                          <width>5</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background: #004D40</string>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_23" native="true">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>120</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>120</height>
+                         </size>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_23">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="label_49">
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>60</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">font-size:20px;
+font-weight:bold;
+color:#004D40</string>
+                           </property>
+                           <property name="text">
+                            <string>Whey Protein</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_50">
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>60</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">color: #004D40;</string>
+                           </property>
+                           <property name="text">
+                            <string>Là một loại protein được tách ra từ sữa bò trong quá trình sản xuất sữa chua hoặc phô mai. Whey cung cấp hàm lượng protein, axit amin thiết yếu chất lượng cho cơ thể giúp hỗ trợ phát triển và phục hồi cơ bắp trong quá trình tập luyện.</string>
+                           </property>
+                           <property name="wordWrap">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea_2">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_massGainer">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>986</width>
+                    <height>331</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_25">
+                   <item>
+                    <widget class="QFrame" name="frame_17">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>120</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>120</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_25">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QFrame" name="frame_18">
+                        <property name="maximumSize">
+                         <size>
+                          <width>5</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background: #004D40</string>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_24" native="true">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>120</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>120</height>
+                         </size>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_24">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="label_51">
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>60</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">font-size:20px;
+font-weight:bold;
+color:#004D40</string>
+                           </property>
+                           <property name="text">
+                            <string>18 Mass Gainer</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_52">
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>60</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">color: #004D40;</string>
+                           </property>
+                           <property name="text">
+                            <string>Là sữa hỗ trợ tăng cân dành cho người gầy, tập gym. Mass giúp cải thiện hệ tiêu hóa, tăng cảm giác thèm ăn, tăng khả năng hấp thu dinh dưỡng, hỗ trợ xây dựng và phát triển cơ bắp tối ưu.</string>
+                           </property>
+                           <property name="wordWrap">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_crud">
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QFrame" name="frame_3">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_5">
+                <property name="maximumSize">
+                 <size>
+                  <width>5</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background: #004D40</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_11" native="true">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <widget class="QLabel" name="label_21">
+                   <property name="styleSheet">
+                    <string notr="true">font-size:20px;
+font-weight:bold;
+color:#004D40</string>
+                   </property>
+                   <property name="text">
+                    <string>Chỉnh sửa sản phẩm</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_22">
+                   <property name="styleSheet">
+                    <string notr="true">color: #004D40;</string>
+                   </property>
+                   <property name="text">
+                    <string>Khu vực giúp bạn thêm xóa cũng như chỉnh sửa các sản phẩm trên ứng dụng</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_4" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <property name="spacing">
+               <number>50</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="btnAdd">
+                <property name="text">
+                 <string>Thêm sản phẩm mới</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>../images/icons/circle-fading-plus.svg</normaloff>../images/icons/circle-fading-plus.svg</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnEdit">
+                <property name="text">
+                 <string>Sửa sản phẩm</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>../images/icons/pencil.svg</normaloff>../images/icons/pencil.svg</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnDelete">
+                <property name="text">
+                 <string>Xóa sản phẩm</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>../images/icons/trash.svg</normaloff>../images/icons/trash.svg</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="tableWidget">
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_ai">
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <item>
+            <widget class="QFrame" name="frame_11">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_22">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_12">
+                <property name="maximumSize">
+                 <size>
+                  <width>5</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background: #004D40</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_21" native="true">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_19">
+                 <item>
+                  <widget class="QLabel" name="label_45">
+                   <property name="styleSheet">
+                    <string notr="true">font-size:20px;
+font-weight:bold;
+color:#004D40</string>
+                   </property>
+                   <property name="text">
+                    <string>AI</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_46">
+                   <property name="styleSheet">
+                    <string notr="true">color: #004D40;</string>
+                   </property>
+                   <property name="text">
+                    <string>Hỗ trợ sử dụng AI</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="scrollArea_5">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_5">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1010</width>
+                <height>648</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_setting">
+          <layout class="QVBoxLayout" name="verticalLayout_22">
+           <item>
+            <widget class="QFrame" name="frame_13">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_23">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_14">
+                <property name="maximumSize">
+                 <size>
+                  <width>5</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background: #004D40</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_22" native="true">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_21">
+                 <item>
+                  <widget class="QLabel" name="label_47">
+                   <property name="styleSheet">
+                    <string notr="true">font-size:20px;
+font-weight:bold;
+color:#004D40</string>
+                   </property>
+                   <property name="text">
+                    <string>Cài đặt</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_48">
+                   <property name="styleSheet">
+                    <string notr="true">color: #004D40;</string>
+                   </property>
+                   <property name="text">
+                    <string>Thay đổi hệ thống</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="scrollArea_6">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_6">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1010</width>
+                <height>648</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>
